@@ -1,0 +1,4 @@
+# AUR packages
+ttf-material-design-icons-extended
+ghostty-git
+swaylock-effects

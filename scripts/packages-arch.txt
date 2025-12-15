@@ -1,0 +1,24 @@
+# Core
+sway
+power-profiles-daemon
+waybar
+wofi
+wlogout
+wl-clipboard
+grim
+slurp
+brightnessctl
+playerctl
+pamixer
+xdg-desktop-portal-wlr
+
+# Terminal & shell
+zsh
+tmux
+neovim
+git
+
+# Fonts
+ttf-jetbrains-mono
+noto-fonts
+noto-fonts-emoji

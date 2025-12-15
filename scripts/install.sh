@@ -4,6 +4,38 @@ set -e
 DOTFILES="$HOME/Dotfiles"
 echo "Using dotfiles directory: $DOTFILES"
 
+# Installing packages for Arch btw
+if command -v pacman >/dev/null 2>&1; then
+  echo "Arch Linux detected"
+
+  PKG_FILE="$DOTFILES/scripts/packages-arch.txt"
+
+  if [ -f "$PKG_FILE" ]; then
+    sudo pacman -S --needed --noconfirm $(grep -v '^#' "$PKG_FILE")
+  fi
+else
+  echo "pacman not found, skipping Arch package install"
+fi
+
+# Installing yay AUR helper
+if command -v pacman >/dev/null 2>&1; then
+  if ! command -v yay >/dev/null 2>&1; then
+    echo "Installing yay (AUR helper)..."
+    sudo pacman -S --needed --noconfirm base-devel git
+    cd /tmp
+    git clone https://aur.archlinux.org/yay.git
+    cd yay
+    makepkg -si --noconfirm
+  fi
+fi
+
+# Installing AUR packages
+AUR_PKG_FILE="$DOTFILES/scripts/packages-aur.txt"
+
+if command -v yay >/dev/null 2>&1 && [ -f "$AUR_PKG_FILE" ]; then
+  yay -S --needed --noconfirm $(grep -v '^#' "$AUR_PKG_FILE")
+fi
+
 # Neovim btw
 echo "Setting up Neovim..."
 mkdir -p "$HOME/.config"
@@ -47,6 +79,6 @@ ln -sfn "$DOTFILES/wlogout" "$HOME/.config/wlogout"
 # Finished
 echo "Dotfiles installation complete!"
 echo "- Restart your shell to apply Zsh config"
-echo "- Open tmux and press prefix + I to install plugins"
-echo "- Open Neovim to allow plugin manager to install plugins"
+echo "- Open tmux and press ctrl+a + I to install plugins"
+echo "- Open Neovim to allow Lazy.nvim to install plugins"
 

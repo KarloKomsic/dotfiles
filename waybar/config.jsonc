@@ -2,7 +2,7 @@
     "layer": "top",
     "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": ["clock"],
-    "modules-right": ["tray", "network", "pulseaudio", "battery", "custom/power"],
+    "modules-right": ["tray", "network", "pulseaudio", "battery", "power-profiles-daemon", "custom/power"],
     "sway/workspaces": {
     	"persistent-workspaces": {
         	"1": [], // Always show a workspace with name '3', on all outputs if it does not exists
@@ -75,6 +75,17 @@
     	"tooltip-format-disconnected": "Disconnected",
     	"max-length": 50,
 	"on-click": "nm-connection-editor"
+    },
+    "power-profiles-daemon": {
+  	 "format": "{icon}",
+  	 "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+  	 "tooltip": true,
+  	 "format-icons": {
+  	   "default": "",
+  	   "performance": "",
+  	   "balanced": "",
+  	   "power-saver": ""
+  	 }
     },
     "custom/power": {
 	"interval": 0,

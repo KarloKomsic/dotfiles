@@ -49,6 +49,7 @@ tooltip label {
 #clock,
 #battery,
 #network,
+#power-profiles-daemon,
 #custom-power,
 #pulseaudio {
 	background-color: #64727D;
