@@ -1,7 +1,7 @@
 * {
 	border: none;
 	/*border-radius: 10px;*/
-	font-family: "JetBrains Mono Nerd Font Propo", Helvetica, Arial, sans-serif;
+	font-family: "JetBrains Mono Nerd Font Propo", "Symbols Nerd Font", "Nerd Font Symbols", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	color: white;
 
@@ -28,12 +28,12 @@ tooltip label {
 	padding: 0 5px;
 	color: white;
 	background: transparent;
-	background-color: #1a1b26;
+	background-color: transparent;
 	border-bottom: 3px solid transparent;
 }
 
 #workspaces button.focused {
-	background: #64727D;
+	background: #222436;
 	border-bottom: 3px solid white;
 }
 
@@ -42,20 +42,19 @@ tooltip label {
 	border-bottom: 3px solid white;
 }
 
-#clock {
-	background-color: #1a1b26;
-}
-
+#custom-notifications,
+#tray,
 #clock,
 #battery,
 #network,
 #power-profiles-daemon,
 #custom-power,
 #pulseaudio {
-	background-color: #64727D;
+	background-color: #222436;
 	padding: 0 5px;
 	margin: 0 2px;
 	border-radius: 8px;
+	border-bottom: 2px solid white;
 }
 
 #battery.charging {

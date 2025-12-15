@@ -75,6 +75,7 @@ ln -sfn "$DOTFILES/swaylock" "$HOME/.config/swaylock"
 ln -sfn "$DOTFILES/waybar" "$HOME/.config/waybar"
 ln -sfn "$DOTFILES/wofi" "$HOME/.config/wofi"
 ln -sfn "$DOTFILES/wlogout" "$HOME/.config/wlogout"
+ln -sfn "$DOTFILES/mako" "$HOME/.config/mako"
 
 # Finished
 echo "Dotfiles installation complete!"

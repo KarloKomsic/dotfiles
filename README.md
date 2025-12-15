@@ -12,7 +12,7 @@ Below is the list of all the current software I use on my day-to-day basis on my
 - [ZSH (Z-Shell)](https://en.wikipedia.org/wiki/Z_shell)
 - [tmux](https://github.com/tmux/tmux)
 - [Ghostty](https://github.com/ghostty-org/ghostty)
-- [Sway](https://github.com/swaywm/sway) (with Swaylock, Wofi, Wlogout and Waybar)
+- [Sway](https://github.com/swaywm/sway) (with Swaylock, Mako, Wofi, Wlogout and Waybar)
 
 > [!NOTE] 
 > This config is my personal setup and may include choices made for my own workflow. Copy and use at your own discretion. If you want a similar setup, consider customizing these configs for your own preferences!

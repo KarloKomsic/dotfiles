@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-left": ["sway/workspaces", "sway/mode",],
     "modules-center": ["clock"],
     "modules-right": ["tray", "network", "pulseaudio", "battery", "power-profiles-daemon", "custom/power"],
     "sway/workspaces": {
