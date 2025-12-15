@@ -25,9 +25,6 @@ Below is the list of all the current software I use on my day-to-day basis on my
 ### Neovim (btw)
 ![Neovim](screenshots/neovim.png)
 
-### Waybar
-![Waybar](screenshots/waybar.png)
-
 ## Install guide
 This repo will assume you use Arch Linux, in which case you should follow the below guide.
 
