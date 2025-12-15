@@ -23,7 +23,7 @@ Below is the list of all the current software I use on my day-to-day basis on my
 ![Sway desktop](screenshots/desktop.png)
 
 ### Neovim (btw)
-![Neovim](screnshots/neovim.png)
+![Neovim](screenshots/neovim.png)
 
 ### Waybar
 ![Waybar](screenshots/waybar.png)
