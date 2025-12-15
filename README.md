@@ -12,6 +12,7 @@ Below is the list of all the current software I use on my day-to-day basis on my
 - [ZSH (Z-Shell)](https://en.wikipedia.org/wiki/Z_shell)
 - [tmux](https://github.com/tmux/tmux)
 - [Ghostty](https://github.com/ghostty-org/ghostty)
+- [Sway](https://github.com/swaywm/sway) (with Swaylock, Wofi, Wlogout and Waybar)
 
 > [!NOTE] 
 > This config is my personal setup and may include choices made for my own workflow. Copy and use at your own discretion. If you want a similar setup, consider customizing these configs for your own preferences!
@@ -36,7 +37,7 @@ To install the dotfiles, head to the scripts/ directory:
 ```bash
 cd scripts/
 ```
-And then, run the install script:
+And then, run the install_dotfiles script:
 ```bash
 ./install.sh
 ```

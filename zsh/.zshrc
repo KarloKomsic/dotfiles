@@ -108,6 +108,7 @@ alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
 alias tks='tmux kill-server'
+alias rg='ranger'
 
 # pnpm
 export PNPM_HOME="/home/karlokomsic/.local/share/pnpm"

@@ -1,0 +1,77 @@
+* {
+	border: none;
+	/*border-radius: 10px;*/
+	font-family: "JetBrains Mono Nerd Font Propo", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: white;
+
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+window#waybar {
+	background: #1a1b26;
+	color: white;
+}
+
+tooltip {
+	background: rgba(43, 48, 59, 0.5);
+	border: 1px solid rgba(100, 114, 125, 0.5);
+}
+
+tooltip label {
+	color: white;
+}
+
+#workspaces button {
+	padding: 0 5px;
+	color: white;
+	background: transparent;
+	background-color: #1a1b26;
+	border-bottom: 3px solid transparent;
+}
+
+#workspaces button.focused {
+	background: #64727D;
+	border-bottom: 3px solid white;
+}
+
+#mode {
+	background: #1a1b26;
+	border-bottom: 3px solid white;
+}
+
+#clock {
+	background-color: #1a1b26;
+}
+
+#clock,
+#battery,
+#network,
+#custom-power,
+#pulseaudio {
+	background-color: #64727D;
+	padding: 0 5px;
+	margin: 0 2px;
+	border-radius: 8px;
+}
+
+#battery.charging {
+	color: white;
+	background-color: #26A65B;
+}
+
+#battery.warning:not(.charging) {
+	background: #f53c3c;
+	color: white;
+	animation-name: blink;
+	animation-duration: 0.5s;
+	animation-timing-function: steps(12);
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#custom-power {
+	padding: 0 12px;
+}

@@ -35,6 +35,15 @@ mkdir -p "$HOME/.config/ghostty"
 ln -sfn "$DOTFILES/ghostty/config.yaml" "$HOME/.config/ghostty/config.yaml"
 ln -sfn "$DOTFILES/ghostty/theme" "$HOME/.config/ghostty/theme"
 
+# SwayWM
+echo "Setting up Sway and Sway utilities"
+mkdir -o "$HOME/.config"
+ln -sfn "$DOTFILES/sway" "$HOME/.config/sway"
+ln -sfn "$DOTFILES/swaylock" "$HOME/.config/swaylock"
+ln -sfn "$DOTFILES/waybar" "$HOME/.config/waybar"
+ln -sfn "$DOTFILES/wofi" "$HOME/.config/wofi"
+ln -sfn "$DOTFILES/wlogout" "$HOME/.config/wlogout"
+
 # Finished
 echo "Dotfiles installation complete!"
 echo "- Restart your shell to apply Zsh config"

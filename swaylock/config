@@ -1,0 +1,8 @@
+image=~/Slike/nord-street.png
+ignore-empty-password
+font=JetBrains Mono Nerd Font
+effect-blur=10x5
+
+clock
+indicator
+indicator-idle-visible
